@@ -3,10 +3,10 @@ stages:
   prepare:
     cmd: python prepare.py
     deps:
-    - path: raw.csv
+    - path: data/raw.csv
       md5: 06c150d910fd970fffa809f69b9237b2
       size: 23
     outs:
-    - path: prepared.csv
+    - path: data/prepared.csv
       md5: 0614507a4754b2bf5e0058bae1febf25
       size: 28
