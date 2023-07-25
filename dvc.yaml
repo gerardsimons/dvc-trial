@@ -5,3 +5,10 @@ stages:
     - data/raw.csv
     outs:
     - data/prepared.csv
+
+  train:
+    cmd: python train.py
+    deps: 
+      - data/prepared.csv
+    outs:
+      - models/tree.pkl

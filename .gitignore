@@ -1,1 +1,2 @@
-/prepared.csv
+data/*.csv
+models/

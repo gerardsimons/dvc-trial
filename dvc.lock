@@ -10,3 +10,13 @@ stages:
     - path: data/prepared.csv
       md5: 0614507a4754b2bf5e0058bae1febf25
       size: 28
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/prepared.csv
+      md5: 0614507a4754b2bf5e0058bae1febf25
+      size: 28
+    outs:
+    - path: models/tree.pkl
+      md5: c6058bf971416926b98a8493ad60b31a
+      size: 347
