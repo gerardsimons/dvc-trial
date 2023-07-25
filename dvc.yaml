@@ -1,0 +1,7 @@
+stages:
+  prepare:
+    cmd: python prepare.py
+    deps:
+    - raw.csv
+    outs:
+    - prepared.csv
